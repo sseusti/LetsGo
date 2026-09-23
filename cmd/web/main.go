@@ -36,7 +36,7 @@ func main() {
 	app := &application{
 		errorlog: errorLog,
 		infoLog:  infoLog,
-		snippets: &models.SnippetModel{DB: *db},
+		snippets: &models.SnippetModel{DB: db},
 	}
 
 	srv := &http.Server{
